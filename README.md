@@ -1,5 +1,4 @@
-kkㅏj:yydventureDesign2022
-황현석 / 김재현 / 박승우 / 이성준 / 정유진
-white_zero@naver.com
+adventureDesign2022
+황현석 22/ 김재현 22/ 박승우 22/ 이성준 22/ 정유진 21
 
-재현씨가 서버에 사용 될 헬멧판별 AI를 개발하였습니다.
+white_zero@naver.com

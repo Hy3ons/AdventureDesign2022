@@ -7,7 +7,7 @@
     tools:context=".ParentActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logoView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
@@ -35,8 +35,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#E3F2FD"
-        android:elevation="10dp"
-        android:gravity="bottom"
+        android:gravity="center|center_horizontal"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +55,7 @@
             app:srcCompat="@drawable/app_setting" />
 
         <ImageButton
-            android:id="@+id/homeButton"
+            android:id="@+id/cameraButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -70,6 +69,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#00FFFFFF"
+            android:padding="3dp"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/app_person" />
 

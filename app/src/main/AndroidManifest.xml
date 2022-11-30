@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="cnu.adventure">
+    package="cnu.kicksafe">
 
     <application
         android:allowBackup="true"
@@ -11,20 +11,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KickBoard"
+        android:theme="@style/Theme.KickSafeApp"
         tools:targetApi="31">
-        <activity
-            android:name=".childActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ParentActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CameraActivity"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

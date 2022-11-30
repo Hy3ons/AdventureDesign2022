@@ -35,6 +35,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#E3F2FD"
+        android:elevation="10dp"
         android:gravity="bottom"
         android:orientation="horizontal"
         android:padding="10dp"

@@ -1,4 +1,4 @@
-package cnu.adventure;
+package cnu.kicksafe;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -24,7 +24,7 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-    public Cursor tryLogin () {
+    public Cursor getLastLogin() {
         SQLiteDatabase db = getReadableDatabase();
         return db.query("LOGIN", new String[]{"id", "username", "password", "login_type"}
                 , null, null, null, null, null);

@@ -1,4 +1,4 @@
-package cnu.adventure;
+package cnu.kicksafe;
 
 import org.junit.Test;
 

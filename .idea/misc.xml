@@ -3,12 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/skyho/Desktop/gg/AdventureDesign2022/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.2" />
-        <entry key="..\:/Users/skyho/Desktop/gg/AdventureDesign2022/app/src/main/res/layout-w936dp/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/skyho/Desktop/gg/AdventureDesign2022/app/src/main/res/layout/activity_blockedapp.xml" value="0.2962962962962963" />
-        <entry key="..\:/Users/skyho/Desktop/gg/AdventureDesign2022/app/src/main/res/layout/activity_camera.xml" value="0.2962962962962963" />
-        <entry key="..\:/Users/skyho/Desktop/gg/AdventureDesign2022/app/src/main/res/layout/activity_login.xml" value="0.2962962962962963" />
-        <entry key="..\:/Users/skyho/Desktop/gg/AdventureDesign2022/app/src/main/res/layout/activity_main.xml" value="0.2962962962962963" />
+        <entry key="..\:/Users/skyho/Desktop/temp/app/src/main/res/layout/activity_blockedapp.xml" value="0.2814814814814815" />
+        <entry key="..\:/Users/skyho/Desktop/temp/app/src/main/res/layout/activity_login.xml" value="0.2814814814814815" />
+        <entry key="..\:/Users/skyho/Desktop/temp/app/src/main/res/layout/activity_main.xml" value="0.2814814814814815" />
+        <entry key="..\:/Users/skyho/Desktop/temp/app/src/main/res/layout/activity_parent.xml" value="0.2814814814814815" />
       </map>
     </option>
   </component>

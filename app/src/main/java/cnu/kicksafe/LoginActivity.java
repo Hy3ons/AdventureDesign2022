@@ -1,8 +1,8 @@
-package cnu.adventure;
-
-import androidx.appcompat.app.AppCompatActivity;
+package cnu.kicksafe;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 

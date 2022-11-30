@@ -31,13 +31,13 @@
             app:srcCompat="@drawable/app_setting" />
 
         <ImageButton
-            android:id="@+id/homeButton"
+            android:id="@+id/cameraButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#00FFFFFF"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/app_home" />
+            app:srcCompat="@drawable/app_camera" />
 
         <ImageButton
             android:id="@+id/personButton"
@@ -118,7 +118,7 @@
         app:layout_constraintVertical_bias="0.595">
 
         <TextView
-            android:id="@+id/cardTitleView"
+            android:id="@+id/nameTextView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginEnd="4dp"
@@ -173,7 +173,7 @@
             app:layout_constraintBottom_toTopOf="@+id/percentageView"
             app:layout_constraintEnd_toEndOf="@+id/circleImageView"
             app:layout_constraintStart_toStartOf="@+id/circleImageView"
-            app:layout_constraintTop_toBottomOf="@+id/cardTitleView"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
             app:layout_constraintVertical_bias="1.0" />
 
         <TextView
@@ -226,6 +226,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
+                    android:padding="4dp"
                     app:srcCompat="@drawable/bottle" />
 
                 <ImageView
@@ -298,6 +299,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
+                    android:padding="4dp"
                     app:srcCompat="@drawable/bottle" />
 
                 <ImageView
@@ -370,6 +372,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
+                    android:padding="4dp"
                     app:srcCompat="@drawable/bottle" />
 
                 <ImageView

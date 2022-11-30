@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.595">
 
         <TextView
-            android:id="@+id/cardTitleView"
+            android:id="@+id/nameTextView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:gravity="center"
@@ -49,7 +49,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.47" />
+            app:layout_constraintGuide_percent="0.37" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.89" />
 
         <ImageView
             android:id="@+id/circleImageView"
@@ -75,7 +82,7 @@
             app:layout_constraintBottom_toTopOf="@+id/percentageView"
             app:layout_constraintEnd_toEndOf="@+id/circleImageView"
             app:layout_constraintStart_toStartOf="@+id/circleImageView"
-            app:layout_constraintTop_toBottomOf="@+id/cardTitleView"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
             app:layout_constraintVertical_bias="1.0" />
 
         <TextView
@@ -108,13 +115,14 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="0"
             android:layout_margin="10dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/circleImageView">
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+            app:layout_constraintVertical_bias="0.0">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -128,6 +136,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
+                    android:padding="4dp"
                     app:srcCompat="@drawable/bottle" />
 
                 <ImageView
@@ -200,6 +209,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
+                    android:padding="4dp"
                     app:srcCompat="@drawable/bottle" />
 
                 <ImageView
@@ -272,6 +282,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
+                    android:padding="4dp"
                     app:srcCompat="@drawable/bottle" />
 
                 <ImageView
@@ -335,15 +346,72 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_height"
+            android:id="@+id/profileImageView"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
+            android:layout_marginStart="32dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline8"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.76"
-            app:layout_constraintStart_toEndOf="@+id/cardTitleView"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/nameTextView"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/app_person" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:srcCompat="@drawable/app_bar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="7dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <ImageButton
+                android:id="@+id/pictureButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/upInKorean"
+                android:paddingBottom="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/app_picture" />
+
+            <ImageButton
+                android:id="@+id/protectButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/upInKorean"
+                android:paddingBottom="8dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/app_protect" />
+
+            <ImageButton
+                android:id="@+id/spanerButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/upInKorean"
+                android:paddingBottom="8dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/app_spaner" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

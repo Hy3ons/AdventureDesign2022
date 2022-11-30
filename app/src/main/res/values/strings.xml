@@ -2,4 +2,6 @@
     <string name="app_name">KickSafeApp</string>
     <string name="baseText">킥보드 사용 제한</string>
     <string name="baseChildText">운전 습관</string>
+    <string name="upInKorean">상위</string>
+    <string name="rider">라이더</string>
 </resources>

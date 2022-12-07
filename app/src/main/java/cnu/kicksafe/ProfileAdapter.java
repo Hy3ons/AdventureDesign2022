@@ -15,9 +15,13 @@ import java.util.List;
 
 public class ProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<Profile> list = new ArrayList<>();
+    private Profile plus;
 
     public ProfileAdapter (List<Profile> list) {
         this.list = list;
+        plus = new Profile();
+
+        checkPlus();
     }
 
     public ProfileAdapter () {
@@ -31,13 +35,14 @@ public class ProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         if (viewType == 0)
             return new ProfileHolder(inflater.inflate(R.layout.activity_profile, parent, false));
         else
-            //추후에 + 공간의 어댑터를 만들 예정
-            return null;
+            return new ProfileHolder(inflater.inflate(R.layout.pluscard, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         Profile profile = list.get(position);
+
+        if (profile.getType() != 0) return;
 
         ProfileHolder ph = (ProfileHolder) holder;
         ph.setProfile(profile);
@@ -80,5 +85,16 @@ public class ProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     @Override
     public int getItemViewType(int position) {
         return list.get(position).getType();
+    }
+
+    private void checkPlus () {
+        for (int i=0;i<list.size();i++) {
+            if (list.get(i) == plus) {
+                list.remove(i);
+            }
+        }
+
+        list.add(plus);
+        notifyDataSetChanged();
     }
 }

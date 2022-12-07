@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "508596902012",
+    "project_id": "adventuredesign-9eb5d",
+    "storage_bucket": "adventuredesign-9eb5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508596902012:android:ad17b55581b7b8e8d711f9",
+        "android_client_info": {
+          "package_name": "cnu.kicksafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508596902012-3c2o57kd172ulnoope25lb6q59qv0bup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAthGkWnGC7x64U3Dbf0RdajTPzJEy1CWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508596902012-3c2o57kd172ulnoope25lb6q59qv0bup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    private List<Profile> list = new ArrayList<>();
+    private List<Profile> list;
     private Profile plus;
 
     public ProfileAdapter (List<Profile> list) {
@@ -35,7 +35,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         if (viewType == 0)
             return new ProfileHolder(inflater.inflate(R.layout.activity_profile, parent, false));
         else
-            return new ProfileHolder(inflater.inflate(R.layout.pluscard, parent, false));
+            return new PlusHolder(inflater.inflate(R.layout.pluscard, parent, false));
     }
 
     @Override
@@ -54,15 +54,16 @@ public class ProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     }
 
     static class ProfileHolder extends RecyclerView.ViewHolder {
-        private final TextView name, speed, helmetCount, timeCount;
+        private final TextView name, speed, helmetCount, timeCount, percentage;
         private final ImageView profileImage;
         public ProfileHolder(@NonNull View itemView) {
             super(itemView);
 
             name = itemView.findViewById(R.id.nameTextView);
             speed = itemView.findViewById(R.id.speedTextView);
-            helmetCount = itemView.findViewById(R.id.takeHelmetView);
+            helmetCount = itemView.findViewById(R.id.helmetTextView);
             timeCount = itemView.findViewById(R.id.usedTimeTextView);
+            percentage = itemView.findViewById(R.id.percentageView);
 
             profileImage = itemView.findViewById(R.id.profileImageView);
         }
@@ -82,6 +83,12 @@ public class ProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }
     }
 
+    static class PlusHolder extends RecyclerView.ViewHolder {
+        public PlusHolder(@NonNull View itemView) {
+            super(itemView);
+        }
+    }
+
     @Override
     public int getItemViewType(int position) {
         return list.get(position).getType();
@@ -91,10 +98,17 @@ public class ProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         for (int i=0;i<list.size();i++) {
             if (list.get(i) == plus) {
                 list.remove(i);
+                break;
             }
         }
 
         list.add(plus);
+        notifyDataSetChanged();
+    }
+
+    public void addProfile (Profile profile) {
+        list.add(profile);
+        checkPlus();
         notifyDataSetChanged();
     }
 }

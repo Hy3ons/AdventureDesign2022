@@ -2,8 +2,11 @@ package cnu.kicksafe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.net.Socket;
 
@@ -18,8 +21,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        loginDB = new DBHelper(this, 0);
-        tryLogin();
+//        loginDB = new DBHelper(this, 0);
+//        tryLogin();
+
+//        Intent intent = new Intent(getApplicationContext(), ParentActivity.class);
+//        startActivity(intent);
+
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ParentActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        Intent s = new Intent(getApplicationContext(), childActivity.class);
+//        startActivity(s);
     }
 
     private void tryLogin() {

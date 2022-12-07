@@ -16,6 +16,13 @@
         <activity
             android:name=".loginSelect"
             android:exported="false" />
+
+        <activity android:name=".ParentActivity"
+            android:exported="false"/>
+
+        <activity android:name=".childActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
